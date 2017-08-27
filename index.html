@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Markup</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-markup/css/markup.css">
@@ -13,53 +13,69 @@
 	<div class="container">
 
 		<header class="flex-container">
-			<div class="flex-grow">
-					<img src="img/icons/menu.png" alt="menu">
+			<div>
+				<a id="btn-menu" href="#"><img src="img/icons/menu.png" alt="menu"></a>
 			</div>
 			<div>
-				<div class="col">
+				<div class="col-left">
 					<span>Kharkiv, 3, Sumskay st.</span><br/>
 					<span>info@open1969.com</span>
 				</div>
-				<div class="col header-img">
+				<div class="col-right">
 					<img src="img/icons/map.png" alt="map">
 				</div>
 			</div>
 			<div>
-				<div class="col">
-					<span>+38 (068) 089-48-83</span><br/>
-					<span>+38 (099) 554-93-65</span>
+				<div class="col-left">
+					<a class="style-link" href="tel:+380680894883"><span>+38 (068) 089-48-83</span></a><br/>
+					<a class="style-link" href="tel:+380995549365"><span>+38 (099) 554-93-65</span></a>
 				</div>
-				<div class="col">
+				<div class="col-right">
 					<img src="img/icons/phone.png" alt="phone">
 				</div>
 			</div>
 			<div>
-				<img src="img/icons/twitter.png" alt="">
-				<img src="img/icons/instagram.png" alt="">
-				<img src="img/icons/facebook.png" alt="">
+				<a href="#"><img src="img/icons/twitter.png" alt=""></a>
+				<a href="#"><img src="img/icons/instagram.png" alt=""></a>
+				<a href="#"><img src="img/icons/facebook.png" alt=""></a>
 			</div>
 		</header>
 
 		<!-- BANNER -->
 		<section class="banner">
+		<div class="bg-black"></div>
 			<div class="content-header">
-				<div class="dark">
-					<img src="img/header-dark.png" >
+				<div class="dark"></div>
+
+				<aside id="menu">
+					<div class="menu center">
+						<ul>
+							<li><a class="mnu style-link" href="#advantage">Advantage</a></li>
+							<li><a class="mnu style-link" href="#our-offices">Our offices</a></li>
+							<li><a class="mnu style-link" href="#discount">Discount</a></li>
+							<li><a class="mnu style-link" href="#statistics">Statistics</a></li>
+							<li><a class="mnu style-link" href="#">Reviews</a></li>
+							<li><a class="mnu style-link" href="#details">Details</a></li>
+							<li><a class="mnu style-link" href="#gift">Gift</a></li>
+							<li><a class="mnu style-link" href="#contacts">Contacts</a></li>
+						</ul>
 				</div>
+				</aside>
 
 				<!-- BLOCK -->
 				<aside class="right-block">
 					<div class="block-header">
-						<span>Coworking space</span>
+						<span><h3>Coworking space</h3></span>
 						<img src="img/logo-right-block.png" alt="">
-						<span class="up">european office in the center</span>
+						<span class="up"><h1>european office <br>in the center</h1></span>
 					</div>
 					
 					<!-- FORM -->
 
 					<form id="form_1">
-						<span class="up">book your place right now</span>
+						<div class="header">
+							<span class="up">book your place <br>right now</span>
+						</div>
 						<input type="text" name="name" placeholder="Your name">
 						<input type="tel" name="phone" placeholder="Your phone number">
 						<input type="submit" name="" value="BOOK" placeholder="" class="btn btn-blue">
@@ -79,7 +95,7 @@
 		<!-- CONTENT -->
 		<section class="content">
 			<!-- WHY WE -->
-			<div class="why-we">
+			<div class="why-we" id="advantage">
 				<!-- Wrapper -->
 				<div class="wrapper">
 					<div class="top-header">
@@ -89,85 +105,103 @@
 						</div>
 					</div>
 					<!-- LEFT BLOCK -->
-					<div class="col2">
-						<div class="content">
+
+					<div class="content">
+						<div class="col-left">
+						<div>
+							
 							<blockquote>
 								<span><i class="icon-first_q"></i> Great companies</span><br>
 								<span>start in good company</span><i class="icon-second_q"></i>
 							</blockquote>
 						</div>
-					</div>
-					<!-- RIGHT BLOCK -->
-					<div class="col2">
-						<div class="content">
-							<div class="col2">
+						</div>
+						<!-- RIGHT BLOCK -->
+						<div class="col-right">
+							<div class="col-left">
+								
 								<!-- 1 -->
 								<div class="block">
-									<div class="col block-img">
+									<div class="block-col block-img">
 										<span class="icon icon-pc"></span>
 									</div>
-									<div class="col block-description">
-										<span class="pb5">Modern equipment, </span><br>
-										<span class="pb5">Powerful computers</span>
+									<div class="block-col block-description">
+										<div class="mb5">
+											<span>Modern equipment, <br>Powerful computers</span>
+										</div>
 									</div>
 								</div>
+
 								<!-- 2 -->
 								<div class="block">
-									<div class="col block-img">
+									<div class="block-col block-img">
 										<span class="icon icon-conversation"></span>
 									</div>
-									<div class="col block-description">
-										<span class="pb5">Comfortable meeting</span><br>
-										<span class="pb5">rooms, with the whole</span><br>
-										<span class="pb5">set of equipment</span>
+									<div class="block-col block-description">
+										<div class="mb5">
+											<span>Comfortable meeting <br>rooms, with the whole <br>set of equipment</span>
+										</div>
 									</div>
 								</div>
+
+
 								<!-- 3 -->
 								<div class="block">
-									<div class="col block-img">
+									<div class="block-col block-img">
 										<span class="icon icon-clock"></span>
 									</div>
-									<div class="col block-description">
-										<span class="pb5">Modern equipment, </span><br>
-										<span class="pb5">Powerful computers</span>
+									<div class="block-col block-description">
+										<div class="mb5">
+											<span>Access to the <br>office 24/7</span>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col2">
+								<!-- <div class="clearfix"></div> -->
+
+								<div class="col-right">
+									
 								<!-- 4 -->
 								<div class="block">
-									<div class="col block-img">
+									<div class="block-col block-img">
 										<span class="icon icon-hands"></span>
 									</div>
-									<div class="col block-description">
-										<span class="pb5">Modern equipment, </span><br>
-										<span class="pb5">Powerful computers</span>
+									<div class="block-col block-description">
+										<div class="mb5">
+											<span>Various public <br>events</span>
+										</div>
 									</div>
 								</div>
 								<!-- 5 -->
 								<div class="block">
-									<div class="col block-img">
+									<div class="block-col block-img">
 										<span class="icon icon-discount"></span>
 									</div>
-									<div class="col block-description">
-										<span class="pb5">Modern equipment, </span><br>
-										<span class="pb5">Powerful computers</span>
+									<div class="block-col block-description">
+										<div class="mb5">
+											<span>Discounts <br>for regular <br>customers</span>
+										</div>
 									</div>
 								</div>
+								<!-- <div class="clearfix"></div> -->
 								<!-- 6 -->
 								<div class="block">
-									<div class="col block-img">
+									<div class="block-col block-img">
 										<span class="icon icon-clean"></span>
 									</div>
-									<div class="col block-description">
-										<span class="pb5">Modern equipment, </span><br>
-										<span class="pb5">Powerful computers</span>
+									<div class="block-col block-description">
+										<div class="mb5">
+											<span>Quality daily <br>wet cleaning</span>
+										</div>
 									</div>
 								</div>
-							</div>
+								</div>
+
+								<!-- <div class="clearfix"></div> -->
 						</div>
 					</div>
-					<div class="office">
+
+					<div class="office" id="our-offices">
 						<div class="bg bg-img1">
 							<div class="orange-bg double"></div>
 							<aside id="office1">
@@ -216,7 +250,7 @@
 					</div>
 				</div>
 				<!-- end wrapper -->
-				<div class="office-block">
+				<div class="office-block" id="discount">
 					<div class="bg-office"></div>
 					<div class="double layout-office">
 						<div class="office-content">
@@ -236,7 +270,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="wrapper" id="stat">
+				<div class="wrapper" id="statistics">
 					<div class="statistic">
 						<div id="stat-space" class="stat-block">
 							<div class="stat-header center">
@@ -278,15 +312,56 @@
 				<!-- START WRAPPER -->
 				<div class="wrapper">
 					<div class="slider">
+					<div class="triangle-top">
+						
 						<!-- SLIDER -->
+						<div class="tr1">
+							<img src="img/triangle/tr-bg1.png" alt="">
+						</div>
+						<div class="tr2">
+							<img src="img/triangle/tr-bg2.png" alt="">
+						</div>
+						<div class="tr3">
+							<img src="img/triangle/tr-bg3.png" alt="">
+						</div>
+						<div class="tr4">
+							<img src="img/triangle/tr-bg4.png" alt="">
+						</div>
+						<div class="tr5">
+							<img src="img/triangle/tr-bg5.png" alt="">
+						</div>
+					</div>
+					<div class="triangle-arrow">
+						<a href="#"><i class="icon-slider_l">
+						</i></a>
+						<a href="#"><i class="icon-slider_r">
+						</i></a>
+					</div>
+					<div class="triangle-bottom">
+						<div class="tr1">
+							<img src="img/triangle/tr-2-1-bg.png" alt="">
+						</div>
+						<div class="tr2">
+							<img src="img/triangle/tr-2-2-bg.png" alt="">
+						</div>
+						<div class="tr3">
+							<img src="img/triangle/tr-2-3-bg.png" alt="">
+						</div>
+						<div class="tr4">
+							<img src="img/triangle/tr-2-4-bg.png" alt="">
+						</div>
+						<div class="tr5">
+							<img src="img/triangle/tr-2-5-bg.png" alt="">
+						</div>
+					</div>
 					</div>
 
 					<!-- DETAILS -->
-					<div class="details">
+					<div class="details" id="details">
 						<div class="details-bg"></div>
 						<div class="details-arm"></div>
 						<div class="block-details">
-							<div class="col2 top">
+							<div class="block-col top">
 								<div class="content">
 									<blockquote>
 										<span><i class="icon-first_q"></i>
@@ -294,45 +369,42 @@
 										</blockquote>
 									</div>
 								</div>
-								<div class="col2">
+								<div class="block-col">
 									<div id="details-block">
 										<!-- 1 -->
 										<div class="block">
-											<div class="col block-img" id="metro">
+											<div class="block-col block-img" id="metro">
 												<span class="icon icon-metro"></span>
 											</div>
-											<div class="col block-description">
-												<span class="spanb5">Great location,</span><br>
-												<span class="pb5">5 minutes to metro</span>
+											<div class="block-col block-description">
+												<span>Great location, <br>5 minutes to metro</span>
 											</div>
 										</div>
 										<!-- 2 -->
 										<div class="block">
-											<div class="col block-img">
+											<div class="block-col block-img">
 												<span class="icon icon-cup"></span>
 											</div>
-											<div class="col block-description">
-												<span class="pb5">Free tea, coffee and sweets</span>
+											<div class="block-col block-description">
+												<span>Free tea, coffee <br>and sweets</span>
 											</div>
 										</div>
 										<!-- 3 -->
 										<div class="block">
-											<div class="col block-img">
+											<div class="block-col block-img">
 												<span class="icon icon-book"></span>
 											</div>
-											<div class="col block-description">
-												<span class="pb5">Great location,</span><br>
-												<span class="pb5">5 minutes to metro</span>
+											<div class="block-col block-description">
+												<span>Great location, <br>5 minutes to metro</span>
 											</div>
 										</div>
 										<!-- 4 -->
 										<div class="block">
-											<div class="col block-img">
+											<div class="block-col block-img">
 												<span class="icon icon-people"></span>
 											</div>
-											<div class="col block-description">
-												<span class="pb5">Great location,</span><br>
-												<span class="pb5">5 minutes to metro</span>
+											<div class="block-col block-description">
+												<span>Great location, <br>5 minutes to metro</span>
 											</div>
 										</div>
 									</div>
@@ -344,7 +416,7 @@
 					<!-- END WRAPPER -->
 
 					<!-- BLOCK TAKE PART -->
-					<div class="take-part">
+					<div class="take-part" id="gift ">
 						<div class="take-bg"></div>
 						<div class="take-table"></div>
 						<div class="content">
@@ -378,7 +450,7 @@
 					</div>
 
 					<!-- BLOCK LOCATION -->
-					<div class="map">
+					<div class="map" id="contacts">
 						<div class="map-bg"></div>
 						<div class="wrapp">
 							<div class="location center">
@@ -421,9 +493,9 @@
 							</div>
 						</div>
 					</div>
-						<div class="footer-logo center">
-							<img src="img/logo-right-block.png" alt="logo">
-						</div>
+					<div class="footer-logo center">
+						<img src="img/logo-right-block.png" alt="logo">
+					</div>
 				</footer>
 			</section>
 		</div>

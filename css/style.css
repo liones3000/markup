@@ -103,11 +103,17 @@ html {
 
 	/*HEADER*/
 header {
-	background-color: rgb(12, 1, 5);
+	background-color: rgba(12, 1, 5,0.5);
 	color: #f6f1bf;
 	font-size: 1.9rem;
 	padding: 10px 0;
 	font-weight: 300;
+	height: 64px;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	width: 100%;
+	max-width: 1280px;
 }
 header img {
 	margin: 0 1.8rem;
@@ -117,8 +123,9 @@ header img {
 	justify-content: space-around;
 	align-items: center;
 }
-.col {
-	display: inline-block;
+.bg-black {
+	background-color: rgb(12, 1, 5);
+	height: 64px; 
 }
 
 /*Content Header*/
@@ -141,16 +148,54 @@ header img {
 	text-align: center;
 }
 .content-header .right-block img{
-	margin: 22px 0;
+	margin: 22px 0 47px;
 }
-.block-header span {
+.block-header {
 	margin-top: 23px;
 	margin-bottom: 20px;
+	font-weight: 900;
 }
+.block-header h3 {
+	font-size: 2rem;
+}
+.block-header h1 {
+	font-size: 2.4rem;
+}
+/*MENU*/
+#menu {
+	display: none;
+	position: fixed;
+	z-index: 99;
+}
+.menu {
+	background: url(../img/menu.png) no-repeat top left;
+	height: 534px;
+	width: 248px;
+	position: relative;
+	padding-top: 20px;
+}
+.menu ul>li {
+	list-style: none;
+	font-weight: 300;
+	font-size: 2.4rem;
+	margin: 30px auto;
+}
+.style-link {
+	color: #f3eebd;
+	text-decoration: none;
+}
+.menu ul a {
+	display: block;
+}
+
+/*BLOCK*/
 .content-header .dark {
+	background: url(../img/header-dark.png) no-repeat;
 	position: absolute;
-	right: 0;
 	top: 0;
+	right: 0;
+	height: 291px;
+	width: 412px;
 }
 #form_1, #form_2 {
 	background-color: rgba(255, 224, 146, 0.84);
@@ -164,10 +209,11 @@ header img {
 #form_1 input::-webkit-input-placeholder{
 	color:  #1a0f04;
 } 
-#form_1 span {
+#form_1 .header {
 	color: #2e1810;
 	font-size: 2.1rem;
-	padding: 27px 0;
+	font-weight: 900;
+	padding: 27px 12px;
 }
 .btn {
 	border: 0;
@@ -258,16 +304,17 @@ section.content {
 }
 
 	/*CONTENT*/
-.col2 .content {
+.wrapper .content {
 	width: 100%;
 	color: #242322;
+	overflow: hidden;
 }
 .why-we blockquote {
 	font-size: 4.5rem;
 	color: #3c0a0d;
 	font-weight: 600;
 	text-align: center;
-	margin: 0 25px;
+	margin: 135px 25px;
 }
 .why-we blockquote i {
 	display: block;
@@ -278,42 +325,48 @@ section.content {
 	text-align: right;
 	padding-top: 25px;
 }
-.why-we .col2 {
-	width: 49.7%;
-	display: inline-block;
-	vertical-align: middle;
+
+.col-left {
+	float: left;
 }
-/*.why-we .col50 {
-	width: 49%;
+.col-right {
+	float: right;
+}
+.block-col {
 	display: inline-block;
-	vertical-align: middle;
-}*/
+}
 .icon {
 	font-size: 6rem;
 }
-.why-we span.pb5 {
-	padding-bottom: 5px;
+.mb5 {
+	margin-bottom: 5px;
 }
-.why-we .block-img {
-	padding-right: 15px;
-	padding-top: 35px;
-	border-right: 1px solid #282828;
+.clearfix {
+	clear: both;
 }
 .why-we .block {
-	margin-bottom: 100px;
+	padding-bottom: 110px;
+}
+
+.why-we .block-img {
+	padding: 10px 15px 0 0;
+	border-right: 1px solid #282828;
 }
 .why-we .block-description {
 	font-size: 1.5rem;
 	font-weight: 500;
-	padding-left: 15px;
+	padding-left: 10px;
+	padding-top: 30px;
+	padding-bottom: 5px;
 }
 .why-we .block-description:after {
 	content: '';
 	display: block;
-	width: 90%;
+	width: 150px;
 	height: 1px;
 	background-color: #282828;
 	margin-left: -25px;
+	margin-bottom: 5px;
 }
 
 	/*OFFICE*/
@@ -353,6 +406,7 @@ section.content {
 	background-image: url(../img/blue-office.png);
 	background-position: top right;
 }
+
 	/*BLOCK*/
 .office aside {
 	position: absolute;
@@ -585,11 +639,11 @@ section.content {
 	float: right;
 	padding-right: 30px;
 }
-#stat {
+#statistics {
 	position: relative;
 	padding-bottom: 25px;
 }
-#stat:before {
+#statistics:before {
 	content: '';
 	display: block;
 	position: absolute;
@@ -598,7 +652,7 @@ section.content {
 	height: 2px;
 	width: 100%;
 }
-#stat:after {
+#statistics:after {
 	content: '';
 	display: block;
 	position: absolute;
@@ -607,7 +661,105 @@ section.content {
 	height: 2px;
 	width: 100%;
 }
+/*SLIDER*/
+.slider {
+	padding-bottom: 20px;
+}
+.slider .triangle-top {
+	position: relative;
+	height: 410px;
+	width: 100%;
+}
+.triangle-top .tr1 {
+	background: url(../img/triangle/tr1.png) no-repeat;
+	position: absolute;
+	top: 0;
+	opacity: .91;
+	left: 3px;
+}
+.triangle-top .tr2 {
+	background: url(../img/triangle/tr2.png) no-repeat;
+	position: absolute;
+	left: 377px;
+	top: 0;
+}
+.triangle-top .tr3 {
+	background: url(../img/triangle/tr3.png) no-repeat;
+	position: absolute;
+	left: 744px;
+	top: 0;
+	opacity: .91;
+}
+.triangle-top .tr4 {
+	background: url(../img/triangle/tr4.png) no-repeat;
+	position: absolute;
+	left: 191px;
+	bottom: 0;
+}
+.triangle-top .tr5 {
+	background: url(../img/triangle/tr5.png) no-repeat;
+	position: absolute;
+	left: 558px;
+	bottom: 0;
+}
+.slider .triangle-arrow {
+	position: relative;
+	font-size: 6rem;
+	z-index: 2;
+}
+.slider .triangle-arrow a {
+	text-decoration: none;
+	color: #321d04;
+}
+.slider .triangle-arrow .icon-slider_l {
+	position: absolute;
+	top: -3rem;
+	left: 0;
+}
+.slider .triangle-arrow .icon-slider_r {
+	position: absolute;
+	top: -3rem;
+	right: 0;
+}
+.slider .triangle-bottom {
+	position: relative;
+	height: 414px;
+	width: 100%;
+	margin-top: 3px;
+}
+.triangle-bottom .tr1 {
+	background: url(../img/triangle/tr-2-1.png) no-repeat;
+	position: absolute;
+	bottom: 0;
+	opacity: .91;
+}
+.triangle-bottom .tr2 {
+	background: url(../img/triangle/tr-2-2.png) no-repeat;
+	position: absolute;
+	left: 372px;
+	bottom: 0;
+}
+.triangle-bottom .tr3 {
+	background: url(../img/triangle/tr-2-3.png) no-repeat;
+	position: absolute;
+	left: 743px;
+	bottom: 0;
+	opacity: .91;
+}
+.triangle-bottom .tr4 {
+	background: url(../img/triangle/tr-2-4.png) no-repeat;
+	position: absolute;
+	left: 190px;
+	top: 0;
+}
+.triangle-bottom .tr5 {
+	background: url(../img/triangle/tr-2-5.png) no-repeat;
+	position: absolute;
+	left: 558px;
+	top: 0;
+}
 
+/*DETAILS*/
 .details {
 	height: 821px;
 	position: relative;
@@ -654,10 +806,10 @@ section.content {
 }
 #details-block {
 	padding-top: 55px;
-	padding-left: 160px;
+	padding-left: 165px;
 }
 #details-block .block {
-	margin-bottom: 60px;
+	padding-bottom: 100px;
 }
 .block-details .icon-metro {
 	vertical-align: super;
@@ -683,9 +835,10 @@ section.content {
 .block-details .block-description:after {
 	background-color: rgb(85, 85, 85);
 	height: 1px;
-	width: 100%;
+	width: 170px;
 	margin-left: -30px;
 }
+
 .block-details .block-img {
 	border-right: 1px solid rgb(85, 85, 85);
 }
@@ -789,6 +942,7 @@ section.content {
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
+	cursor: pointer;
 }
 .take-part .join .bold {
 	font-size: 3.6rem;
@@ -817,7 +971,6 @@ section.content {
 	width: 100%;
 	margin-top: 140px;
 }
-
 .map .wrapp {
 	width: calc(100% - 300px);
 	height: 860px;
@@ -866,3 +1019,4 @@ section.content {
 .footer-logo {
 	margin-top: 20px;
 }
+
