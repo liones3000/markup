@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Markup</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-markup/css/markup.css">
 	<script src="lib/jquery/dist/jquery.min.js"></script>
@@ -14,7 +15,7 @@
 
 		<header class="flex-container">
 			<div>
-				<a id="btn-menu" href="#"><img src="img/icons/menu.png" alt="menu"></a>
+				<a id="btn-menu" href="#"><img class="menu-img" src="img/icons/menu.png" alt="menu"></a>
 			</div>
 			<div>
 				<div class="col-left">
@@ -43,7 +44,7 @@
 
 		<!-- BANNER -->
 		<section class="banner">
-		<div class="bg-black"></div>
+			<div class="bg-black"></div>
 			<div class="content-header">
 				<div class="dark"></div>
 
@@ -54,12 +55,12 @@
 							<li><a class="mnu style-link" href="#our-offices">Our offices</a></li>
 							<li><a class="mnu style-link" href="#discount">Discount</a></li>
 							<li><a class="mnu style-link" href="#statistics">Statistics</a></li>
-							<li><a class="mnu style-link" href="#">Reviews</a></li>
+							<li><a class="mnu style-link" href="#reviews">Reviews</a></li>
 							<li><a class="mnu style-link" href="#details">Details</a></li>
 							<li><a class="mnu style-link" href="#gift">Gift</a></li>
 							<li><a class="mnu style-link" href="#contacts">Contacts</a></li>
 						</ul>
-				</div>
+					</div>
 				</aside>
 
 				<!-- BLOCK -->
@@ -71,7 +72,6 @@
 					</div>
 					
 					<!-- FORM -->
-
 					<form id="form_1">
 						<div class="header">
 							<span class="up">book your place <br>right now</span>
@@ -83,7 +83,6 @@
 
 				</aside>
 				<!-- END BLOCK -->
-
 				<div class="step">
 					<div class="romb">
 						<a href="#"></a>
@@ -95,9 +94,9 @@
 		<!-- CONTENT -->
 		<section class="content">
 			<!-- WHY WE -->
-			<div class="why-we" id="advantage">
+			<div class="why-we">
 				<!-- Wrapper -->
-				<div class="wrapper">
+				<div class="wrapper" id="advantage">
 					<div class="top-header">
 						<div class="block-content center line">
 							<span class="medium">WHY </span>
@@ -107,17 +106,16 @@
 					<!-- LEFT BLOCK -->
 
 					<div class="content">
-						<div class="col-left">
-						<div>
-							
-							<blockquote>
-								<span><i class="icon-first_q"></i> Great companies</span><br>
-								<span>start in good company</span><i class="icon-second_q"></i>
-							</blockquote>
-						</div>
+						<div class="col-left adv-cite">
+							<div>
+								<blockquote>
+									<span><i class="icon-first_q"></i> Great companies</span><br>
+									<span>start in good company</span><i class="icon-second_q"></i>
+								</blockquote>
+							</div>
 						</div>
 						<!-- RIGHT BLOCK -->
-						<div class="col-right">
+						<div class="col-right adv-img">
 							<div class="col-left">
 								
 								<!-- 1 -->
@@ -144,7 +142,6 @@
 									</div>
 								</div>
 
-
 								<!-- 3 -->
 								<div class="block">
 									<div class="block-col block-img">
@@ -157,10 +154,8 @@
 									</div>
 								</div>
 							</div>
-								<!-- <div class="clearfix"></div> -->
 
-								<div class="col-right">
-									
+							<div class="col-right">
 								<!-- 4 -->
 								<div class="block">
 									<div class="block-col block-img">
@@ -183,7 +178,6 @@
 										</div>
 									</div>
 								</div>
-								<!-- <div class="clearfix"></div> -->
 								<!-- 6 -->
 								<div class="block">
 									<div class="block-col block-img">
@@ -195,9 +189,7 @@
 										</div>
 									</div>
 								</div>
-								</div>
-
-								<!-- <div class="clearfix"></div> -->
+							</div>
 						</div>
 					</div>
 
@@ -311,49 +303,109 @@
 
 				<!-- START WRAPPER -->
 				<div class="wrapper">
-					<div class="slider">
-					<div class="triangle-top">
-						
-						<!-- SLIDER -->
-						<div class="tr1">
-							<img src="img/triangle/tr-bg1.png" alt="">
+					<div class="slider" id="reviews">
+						<div class="triangle-top">
+
+							<!-- SLIDER -->
+							<div class="tr1">
+								<img src="img/triangle/tr-bg1.png" alt="">
+								<div class="tr-text medium">
+									<span>Сonsectetuer adipiscing <br>elit. Aenean commodo <br>ligula eget dolor. <br>Aenean massa.
+									</span>
+									<div class="more">
+										<p class="circle"></p>
+										<p class="circle"></p>
+										<p class="circle"></p>
+									</div>
+								</div>
+							</div>
+							<div class="tr2">
+								<img src="img/triangle/tr-bg2.png" alt="">
+							</div>
+							<div class="tr3">
+								<img src="img/triangle/tr-bg3.png" alt="">
+								<div class="tr-text medium">
+									<span>Dis parturient montes, <br>nascetur ridiculus mus. <br>Onec quam felici <br>esnec, pelentesque.
+									</span>
+									<div class="more">
+										<p class="circle"></p>
+										<p class="circle"></p>
+										<p class="circle"></p>
+									</div>
+								</div>
+							</div>
+							<div class="tr4">
+								<img src="img/triangle/tr-bg4.png" alt="">
+								<div class="tr-text medium">
+									<div class="tr-block">
+										<span class="col-left">Alex,  35</span>
+										<span class="col-right"> web-designer</span>
+									</div>
+								</div>
+							</div>
+							<div class="tr5">
+								<img src="img/triangle/tr-bg5.png" alt="">
+								<div class="tr-text medium">
+									<div class="tr-block">
+										<span class="col-left">Denis, 28 </span>
+										<span class="col-right">php developer</span>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="tr2">
-							<img src="img/triangle/tr-bg2.png" alt="">
+						<div class="triangle-arrow">
+							<a href="#" id="slideLeft"><i class="icon-slider_l">
+							</i></a>
+							<a href="#" id="slideRight"><i class="icon-slider_r">
+							</i></a>
 						</div>
-						<div class="tr3">
-							<img src="img/triangle/tr-bg3.png" alt="">
+						<div class="triangle-bottom">
+							<div class="tr1">
+								<img src="img/triangle/tr-2-1-bg.png" alt="">
+								<div class="tr-text medium">
+									<div class="tr-block">
+										<span class="col-left">Anna, 23 </span><br>
+										<span class="col-right"> art director</span>
+									</div>
+								</div>
+							</div>
+							<div class="tr2">
+								<img src="img/triangle/tr-2-2-bg.png" alt="">
+							</div>
+							<div class="tr3">
+								<img src="img/triangle/tr-2-3-bg.png" alt="">
+								<div class="tr-text medium">
+									<div class="tr-block">
+										<span class="col-left extra">Jane, 27</span><br>
+										<span class="col-right">journalist</span>
+									</div>
+								</div>
+							</div>
+							<div class="tr4">
+								<img src="img/triangle/tr-2-4-bg.png" alt="">
+								<div class="tr-text medium">
+									<span>Сonsectetuer adipiscing <br>elit. Aenean commodo <br>ligula eget dolor. <br>Aenean massa.
+									</span>
+									<div class="more">
+										<p class="circle"></p>
+										<p class="circle"></p>
+										<p class="circle"></p>
+									</div>
+								</div>
+							</div>
+							<div class="tr5">
+								<img src="img/triangle/tr-2-5-bg.png" alt="">
+								<div class="tr-text medium">
+									<span>Сonsectetuer adipiscing <br>elit. Aenean commodo <br>ligula eget dolor. <br>Aenean massa.
+									</span>
+									<div class="more">
+										<p class="circle"></p>
+										<p class="circle"></p>
+										<p class="circle"></p>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="tr4">
-							<img src="img/triangle/tr-bg4.png" alt="">
-						</div>
-						<div class="tr5">
-							<img src="img/triangle/tr-bg5.png" alt="">
-						</div>
-					</div>
-					<div class="triangle-arrow">
-						<a href="#"><i class="icon-slider_l">
-						</i></a>
-						<a href="#"><i class="icon-slider_r">
-						</i></a>
-					</div>
-					<div class="triangle-bottom">
-						<div class="tr1">
-							<img src="img/triangle/tr-2-1-bg.png" alt="">
-						</div>
-						<div class="tr2">
-							<img src="img/triangle/tr-2-2-bg.png" alt="">
-						</div>
-						<div class="tr3">
-							<img src="img/triangle/tr-2-3-bg.png" alt="">
-						</div>
-						<div class="tr4">
-							<img src="img/triangle/tr-2-4-bg.png" alt="">
-						</div>
-						<div class="tr5">
-							<img src="img/triangle/tr-2-5-bg.png" alt="">
-						</div>
-					</div>
 					</div>
 
 					<!-- DETAILS -->
@@ -361,7 +413,7 @@
 						<div class="details-bg"></div>
 						<div class="details-arm"></div>
 						<div class="block-details">
-							<div class="block-col top">
+							<div class="col-left top det-cite">
 								<div class="content">
 									<blockquote>
 										<span><i class="icon-first_q"></i>
@@ -369,7 +421,7 @@
 										</blockquote>
 									</div>
 								</div>
-								<div class="block-col">
+								<div class="col-right det-img">
 									<div id="details-block">
 										<!-- 1 -->
 										<div class="block">
@@ -433,7 +485,9 @@
 									<input type="submit" name="" value="BOOK" placeholder="" class="btn btn-red">
 								</form>
 							</aside>
-							<div class="take-female"></div>
+							<div class="take-female">
+								<img src="img/take-female.png" alt="">
+							</div>
 							<div class="join center" id="join">
 								<div class="arrow">
 									<i class="icon-slider_r"></i>
@@ -451,8 +505,31 @@
 
 					<!-- BLOCK LOCATION -->
 					<div class="map" id="contacts">
-						<div class="map-bg"></div>
+
+						<div class="map-bg">
+						</div>
+
 						<div class="wrapp">
+							<div class="pointer center park">
+								<span class="bold">Park</span>
+								<div class="point"></div>
+							</div>
+							<div class="pointer center market">
+								<span class="bold">Market</span>
+								<div class="point"></div>
+							</div>
+							<div class="pointer center mc">
+								<span class="bold">MC Donald's</span>
+								<div class="point"></div>
+							</div>
+							<div class="pointer center coffee">
+								<span class="bold">Coffe life</span>
+								<div class="point"></div>
+							</div>
+							<div class="pointer center open1969">
+								<span class="extra">1969 OPEN</span>
+								<div class="point"></div>
+							</div>
 							<div class="location center">
 								<span class="up bold">location</span><br>
 								<p class="medium">Central Kharkiv is the perfect location because of its close proximity to the commercial, retail and entertainment hubs.</p>
@@ -478,9 +555,9 @@
 								<span class="up extra">follow us</span>
 							</div>
 							<div class="footer-content footer-icons">
-								<img src="img/icons/twitter.png" alt="">
-								<img src="img/icons/instagram.png" alt="">
-								<img src="img/icons/facebook.png" alt="">
+								<a href="#"><img src="img/icons/twitter.png" alt=""></a>
+								<a href="#"><img src="img/icons/instagram.png" alt=""></a>
+								<a href="#"><img src="img/icons/facebook.png" alt=""></a>
 							</div>
 						</div>
 						<div>
@@ -488,8 +565,8 @@
 								<span class="up extra">contact</span>
 							</div>
 							<div class="footer-content">
-								<span>+38 (068) 089-48-83</span><br/>
-								<span>+38 (099) 554-93-65</span>
+								<a class="style-link" href="tel:+380680894883"><span>+38 (068) 089-48-83</span></a><br/>
+								<a class="style-link" href="tel:+380995549365"><span>+38 (099) 554-93-65</span></a>
 							</div>
 						</div>
 					</div>
@@ -498,6 +575,26 @@
 					</div>
 				</footer>
 			</section>
+
+			<!-- MODAL -->
+			<div id="openModal" hidden>
+				<div class="overlay">
+					<div class="modal center">
+						<img src="img/modal-bg.png" alt="table">
+						<a href="#" id="close" class="close" title="Close"></a>
+						<div class="modal-header">
+							<h1>Thank you,</h1>
+							<h2>your request has been accepted!</h2>
+						</div>
+						<div class="modal-content">
+							<h2>We are glad that you joined us</h2>
+						</div>
+						<div class="modal-footer">
+							<h3>Our manager will contact you shortly.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<script src="js/script.js"></script>
 	</body>
