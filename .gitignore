@@ -1,2 +1,6 @@
-lib
+lib/jquery/*
+!lib/jquery/dist
+lib/jquery/dist/*
+!lib/jquery/dist/jquery.min.js
+
 img/icons/Thumbs.db
